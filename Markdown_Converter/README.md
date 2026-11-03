@@ -1,0 +1,240 @@
+\# Rendered Text to Raw Markdown Converter
+
+
+
+A Python utility that converts rendered HTML and plain text files into raw Markdown (`.md`) files.
+
+
+
+The script reconstructs Markdown formatting, including headings, bold and italic text, hyperlinks, lists, tables, blockquotes and code blocks. The resulting files are suitable for GitHub README files, technical documentation and other Markdown-based projects.
+
+
+
+\## Features
+
+
+
+\- Converts HTML, HTM and XHTML files into Markdown.
+
+\- Accepts plain text (`.txt`) files.
+
+\- Reconstructs Markdown headings (`#` through `######`).
+
+\- Preserves bold and italic formatting.
+
+\- Converts hyperlinks into Markdown link syntax.
+
+\- Converts ordered and unordered lists.
+
+\- Reconstructs HTML tables as Markdown tables.
+
+\- Preserves code blocks and inline code.
+
+\- Converts blockquotes.
+
+\- Preserves image references and alternative text.
+
+\- Removes unnecessary HTML elements and excessive whitespace.
+
+\- Automatically generates an output `.md` file.
+
+\- Retains the original input file.
+
+
+
+\## Requirements
+
+
+
+\- Python 3.x
+
+\- BeautifulSoup4
+
+
+
+\## Installation
+
+
+
+Install the required dependency:
+
+
+
+```bash
+
+pip install beautifulsoup4
+
+```
+
+
+
+\## Usage
+
+
+
+Run the Python script:
+
+
+
+```bash
+
+python Rendered\_To\_Raw\_Markdown.py
+
+```
+
+
+
+Enter the full path of the input file when prompted.
+
+
+
+Alternatively, provide the input filename as a command-line argument:
+
+
+
+```bash
+
+python Rendered\_To\_Raw\_Markdown.py "C:\\Users\\YourName\\Desktop\\rendered.html"
+
+```
+
+
+
+\## Supported Input Formats
+
+
+
+| Format | Extension | Description |
+
+|---|---|---|
+
+| HTML | `.html` | Rendered HTML documents |
+
+| HTML | `.htm` | HTML documents |
+
+| XHTML | `.xhtml` | XHTML documents |
+
+| Plain text | `.txt` | Unformatted text files |
+
+
+
+\## Output
+
+
+
+The script automatically creates a Markdown file in the same directory as the original input file.
+
+
+
+For example:
+
+
+
+```text
+
+Input:
+
+rendered.html
+
+
+
+Output:
+
+rendered.md
+
+```
+
+
+
+The output is genuine Markdown source rather than rendered HTML.
+
+
+
+\### Example Conversion
+
+
+
+\*\*Rendered heading:\*\*
+
+
+
+Rendered Text to Raw Markdown
+
+
+
+\*\*Raw Markdown output:\*\*
+
+
+
+```markdown
+
+\# Rendered Text to Raw Markdown
+
+```
+
+
+
+\## Important Notes
+
+
+
+HTML is the preferred input format because it retains the original document structure and formatting information.
+
+
+
+Plain text files can be converted, but formatting that has already been discarded cannot reliably be reconstructed.
+
+
+
+The converter preserves the original input file and creates a separate Markdown output file.
+
+
+
+\## Applications
+
+
+
+Potential applications include:
+
+
+
+\- Recovering Markdown source from rendered documentation.
+
+\- Preparing GitHub README files.
+
+\- Converting formatted technical notes into Markdown.
+
+\- Reconstructing code documentation.
+
+\- Converting HTML-based technical reports.
+
+\- Preparing content for Markdown-based repositories.
+
+
+
+\## Licence
+
+
+
+This project is licensed under the \*\*Apache License, Version 2.0\*\*.
+
+
+
+You may obtain a copy of the licence at:
+
+
+
+https://www.apache.org/licenses/LICENSE-2.0
+
+
+
+Unless required by applicable law or agreed to in writing, software distributed under the licence is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+
+
+
+See the `LICENSE` file for the full licence text.
+
+
+
+
+
